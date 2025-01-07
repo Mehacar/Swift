@@ -21,8 +21,6 @@ class ViewController: UIViewController {
     }
     
     @objc func timerFunction(){
-
-     
         
         if (counter >= 0){
             timeLabel.text = "Timer: \(counter)"
@@ -31,7 +29,6 @@ class ViewController: UIViewController {
             timer.invalidate()
         }
         counter -= 1
-
     }
 
     @IBAction func buttonClicked(_ sender: Any) {
