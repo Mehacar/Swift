@@ -52,3 +52,18 @@ func devide(num1: Int) -> Int{
 myArray.map(devide)
 
 myArray.map({$0 / 5})
+
+/* Question */
+
+func hesapla(_ a: Int, _ b: Int, _ islem: (Int, Int) -> Int) -> Int {
+    return islem(a, b)
+}
+
+let topla: (Int,Int) -> Int = { $0 + $1 }
+let carp: (Int,Int) -> Int = { $0 * $1 }
+
+print(hesapla(4, 5, topla)) // 9
+print(hesapla(4, 5, carp))  // 20
+
+
+
